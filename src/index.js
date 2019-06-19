@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {MyHeader} from './header.js';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+{/* const navTitles = ['About Me','Projects','Resume','Currently','Contact'];*/};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class HomePage extends React.Component {
+	render() {
+		return (
+			<div className="container">
+				<MyHeader />
+				<div className="row">
+					<div className="col-md-6 offset-md-3 center-it">
+						<p>
+							{"Something important will be written here, I'm sure."}
+						</p>
+					</div>
+				</div>
+			</div>
+		);
+	}
+}
+
+ReactDOM.render(<HomePage />, document.getElementById('root'));
