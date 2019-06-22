@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 
 const navTitles = {
-	names: ['About Me','Projects','Resume','Currently','Contact'], 
+	names: ['About Me','Projects','Resume','Contact'], 
 	labels: ['about','projects','resume','current','contact'] 
 };
 var navItems = [];
