@@ -10,3 +10,9 @@ body {
   width: 300px;
   border-radius: 150px;
 }
+
+.nav-link {
+	color:blue;
+	font: inherit;
+	cursor: pointer;
+}
